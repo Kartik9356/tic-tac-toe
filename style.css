@@ -1,0 +1,135 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Gill Sans", sans-serif;
+ }
+ 
+ body {
+    background-color: #EEEDEB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+ }
+ 
+ main,
+ .message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #E6B9A6;
+    height: 86vh;
+    width: 465px;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .message {
+    position: absolute;
+    height: 77vh;
+    background-color: #e48f79;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+ }
+ 
+ main h2 {
+    margin-bottom: 35px;
+    font-size: 2.5rem;
+    color: #333;
+ }
+ 
+ .winner {
+    height: 70vh;
+    width: 100%;
+    max-width: 600px;
+ }
+ 
+ .boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 350px;
+    width: 350px;
+    max-width: 22rem;
+    flex-wrap: wrap;
+    gap: 10px;
+ }
+ 
+ .boxes button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 110px;
+    width: 110px;
+    font-size: 50px;
+    background-color: #939185;
+    border: none;
+    color: black;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 4px 5px 5px gray;
+ }
+ 
+ .boxes button:hover {
+    background-color: #b0a99f;
+    transform: scale(1.05);
+ }
+ 
+ .restart,
+ .playb {
+    margin-top: 30px;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background-color: #2F3645;
+    color: whitesmoke;
+    box-shadow: 4px 4px 8px grey;
+    transition: background-color 0.3s, transform 0.3s;
+ }
+ 
+ .restart:hover,
+ .playb:hover {
+    background-color: #1d2530;
+    transform: scale(1.05);
+ }
+ 
+ .hide {
+    display: none;
+ }
+ 
+ @media (max-width: 600px) {
+    main,
+    .message {
+        width: 100%;
+        padding: 20px;
+    }
+ 
+    .boxes {
+        height: auto;
+        width: 100%;
+    }
+ 
+    .boxes button {
+        height: 80px;
+        width: 80px;
+        font-size: 1.5rem;
+    }
+ 
+    .restart,
+    .playb {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+ }
+ 
+ 
